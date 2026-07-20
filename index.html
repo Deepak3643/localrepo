@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JS Tutorial</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,6 +14,19 @@
     <br>This is new feature (button)
     <button type="button" onclick="window.location.href='https://roadmap.sh/'">Click me!</button>
     <br>This site takes you to the <i><b>Roadmap.sh</b></i> site that helps you get and understand the roadmaps to learn various languages and technologies. It also provides you with the best resources to learn from. You can also find the roadmap for your desired language or technology and start learning it.
-    <br>Thank you!! 
+    <br>Thank you!!
+    
+    
+        <button id="prompt-btn">Show Prompt</button>
+<p id="output">Hello, Guest!</p>
+<script src="index.js">
+const btn = document.getElementById("prompt-btn");
+const output = document.getElementById("output");
+btn.addEventListener("click", () => {
+  const userName = prompt("What is your name?", "Guest");
+  output.textContent = "Hello, " + userName + "!";
+});
+    </script>
+
 </body>
 </html>
