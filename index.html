@@ -9,23 +9,21 @@
 <body>
     <h2>Welcome to the Local Repository</h2>
     <br>This is a dropdown menu (dropdown)
-    
- </body>
+    <select>
+        <option value="option1">HTML</option>
+        <option value="option2">CSS</option>
+        <option value="option3">JavaScript</option>
+    </select>
     <br>This is new feature (button)
-    <button type="button" onclick="window.location.href='https://roadmap.sh/'">Click me!</button>
+    <button type="button" onclick="window.location.href='https://roadmap.sh/'">Get Roadmap!</button>
     <br>This site takes you to the <i><b>Roadmap.sh</b></i> site that helps you get and understand the roadmaps to learn various languages and technologies. It also provides you with the best resources to learn from. You can also find the roadmap for your desired language or technology and start learning it.
     <br>Thank you!!
     
+
+    <button id="prompt-btn">Show Prompt</button>
+    <p id="output">Hello, User!</p>
+    <script src="index.js">
     
-        <button id="prompt-btn">Show Prompt</button>
-<p id="output">Hello, Guest!</p>
-<script src="index.js">
-const btn = document.getElementById("prompt-btn");
-const output = document.getElementById("output");
-btn.addEventListener("click", () => {
-  const userName = prompt("What is your name?", "Guest");
-  output.textContent = "Hello, " + userName + "!";
-});
     </script>
 
 </body>
